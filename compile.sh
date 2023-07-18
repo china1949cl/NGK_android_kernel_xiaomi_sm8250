@@ -11,12 +11,12 @@ nocol='\033[0m'
 # Cleanup
 rm -rf out/outputs/*
 
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
 
-./compile-alioth.sh
-./compile-apollo.sh
+# ./compile-alioth.sh
+# ./compile-apollo.sh
 ./compile-lmi.sh
-./compile-munch.sh
+#./compile-munch.sh
 
 BUILD_END=$(date +"%s")
 DIFF=$(($BUILD_END - $BUILD_START))

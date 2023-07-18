@@ -7,7 +7,7 @@ SUBARCH="arm64"
 DEFCONFIG=nogravity-${PHONE}_defconfig
 COMPILER=clang
 LINKER="lld"
-COMPILERDIR="/media/pierre/Expension/Android/PocoX3Pro/Kernels/Proton-Clang"
+COMPILERDIR="/home/zhongliju/MyProjects/AndroidKernel/RedmiK30ProZoomEdition/proton-clang"
 
 # Copy gpu dtsi
 cp arch/arm64/boot/dts/vendor/qcom/kona-v2-gpu-xxxx/kona-v2-gpu-apollo.dtsi arch/arm64/boot/dts/vendor/qcom/kona-v2-gpu.dtsi
